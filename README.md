@@ -1,16 +1,9 @@
 # tip_calculator_app
 
-A new Flutter project.
+Projekt Flutter wykonany w ramach kursu na Udemy. 
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Praca zaliczeniowa z przedmiotu "Wprowadzenie do programowania aplikacji mobilnych".
+Aplikacja umożliwia obliczenie należnej kwoty z rachunku (z np. restauracji) z uwzględnieniem podziału na liczbę osób zrzucających się na rachunek, kwotu rachunku i procentu napiwku.
+Po wybraniu opcji "Save tip" w pamięci telefonu zostanie utworzony plik z danymi dotyczącymy danej kalkulacji.
