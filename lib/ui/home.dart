@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:confirm_dialog/confirm_dialog.dart';
 import 'package:tip_calculator_app/util/hexcolor.dart';
 import 'package:tip_calculator_app/util/fileSave.dart';
 
@@ -188,7 +189,17 @@ class _BillSplitterState extends State<BillSplitter> {
 
                         InkWell(
                           onTap: () async {
-                            writeData(_tipPercentage, _personCounter, _billAmount);
+                            if (await confirm(
+                                context,
+                                title: const Text('Confirm'),
+                                content: const Text('Would you lake to save the tip?'),
+                                textOK: const Text('Yes'),
+                                textCancel: const Text('No'),
+                            )) {
+                              writeData(_tipPercentage, _personCounter, _billAmount);
+                            }
+
+                            // Navigator.of(context).pop();
                           },
                           child: Container(
                               width: 120.0,
