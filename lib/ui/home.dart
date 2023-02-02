@@ -184,6 +184,28 @@ class _BillSplitterState extends State<BillSplitter> {
                               _tipPercentage = newValue.round();
                             });
                           }
+                        ),
+
+                        InkWell(
+                          onTap: () async {
+                            writeData(_tipPercentage, _personCounter, _billAmount);
+                          },
+                          child: Container(
+                              width: 120.0,
+                              height: 40.0,
+                              margin: EdgeInsets.all(10.0),
+                              decoration: BoxDecoration(
+                                color: _purple.withOpacity(0.1),
+                                borderRadius: BorderRadius.circular(7.0),
+                              ),
+                              child: Center(
+                                child: Text("Save tip", style: TextStyle(
+                                  color: _purple,
+                                  fontSize: 17.0,
+                                  fontWeight: FontWeight.bold,
+                                ),),
+                              )
+                          ),
                         )
                       ],
                     )
