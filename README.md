@@ -2,7 +2,7 @@
 
 Projekt Flutter wykonany w ramach kursu na Udemy. 
 
-## Getting Started
+## Dodatkowe informacje
 
 Praca zaliczeniowa z przedmiotu "Wprowadzenie do programowania aplikacji mobilnych".
 Aplikacja umożliwia obliczenie należnej kwoty z rachunku (z np. restauracji) z uwzględnieniem podziału na liczbę osób zrzucających się na rachunek, kwotu rachunku i procentu napiwku.
